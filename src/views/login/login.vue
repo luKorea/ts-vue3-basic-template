@@ -1,10 +1,15 @@
 <template>
-  <div class="login"></div>
+  <div class="login">
+    <login-panel />
+  </div>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
+import LoginPanel from "@/views/login/cpns/login-panel.vue";
 
-export default defineComponent({});
+export default defineComponent({
+  components: { LoginPanel },
+});
 </script>
 
 <style lang="less" scoped>
