@@ -10,6 +10,10 @@ const routes: RouteRecordRaw[] = [
     path: "/login",
     component: () => import("@/views/login/login.vue"),
   },
+  {
+    path: "/:pathMatch(.*)*",
+    component: () => import("@/views/not-found/not-found.vue"),
+  },
 ];
 const router = createRouter({
   history: createWebHashHistory(),
