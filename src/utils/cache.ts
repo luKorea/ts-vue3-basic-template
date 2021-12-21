@@ -1,5 +1,5 @@
 class LocalCache {
-  setCache(key: string, value: any): void {
+  setCache(key: string, value: any) {
     localStorage.setItem(key, JSON.stringify(value));
   }
 

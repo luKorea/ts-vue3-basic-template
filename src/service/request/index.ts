@@ -37,7 +37,7 @@ class KoreaRequest {
           this.loading = ElLoading.service({
             lock: true,
             text: "加载中",
-            background: "rgba(0,0,0,.1)",
+            background: "rgba(0,0,0,.4)",
             spinner: "",
           });
         }
